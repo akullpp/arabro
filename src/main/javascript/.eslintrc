@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "airbnb"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "semi": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/require-default-props": "off"
+  },
+  "env": {
+    "jest": true
+  },
+  "globals": {
+    "fetch": true,
+    "document": true
+  }
+}

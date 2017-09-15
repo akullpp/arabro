@@ -1,0 +1,7 @@
+.error__wrapper {
+  padding: 1em;
+  width: 50%;
+  margin-bottom: 2em;
+  border: solid 2px #FF4136;
+  transition: border 0.3s;
+}

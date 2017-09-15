@@ -1,0 +1,7 @@
+.number__input {
+    padding: 1em;
+    border: none;
+    width: 50%;
+    border-bottom: solid 2px #c9c9c9;
+    transition: border 0.3s;
+}
