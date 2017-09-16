@@ -2,7 +2,7 @@
 
 Converts Arabic numerals to Roman numerals.
 
-The Swagger API can be used under the `http://<host>:<port>/swagger-ui.html` URL. The web application is located under the root.
+Since this is a demonstration, the SPA is provided by the same server which should normally be extracted and served seperately as static resource.
 
 ## Requirements
 
@@ -20,7 +20,9 @@ or a clean slate
 docker-compose up --build
 ```
 
-The server can be accessed under port `8080`.
+The server can be accessed under port `8080` with the web application served at the root.
+
+The Swagger API can be used under the `http://<host>:<port>/swagger-ui.html` URL.
 
 ## Development
 
@@ -30,7 +32,7 @@ The server can be accessed under port `8080`.
 ./mvwn spring-boot:run
 ```
 
-The backend will be available under port `11000`.
+The backend will be available at port `11000`.
 
 ### Frontend
 
@@ -42,7 +44,7 @@ Inside the `src/main/javascript` folder use
 npm start
 ```
 
-The frontend will be available under port `3000`.
+The frontend will be available at port `3000`.
 
 ## Build
 
@@ -64,6 +66,8 @@ The frontend will be available under port `3000`.
 
 * Persistence
 
+* Implement authentication and authorization
+
 ### Frontend
 
 * Substitute propTypes with Flow or TypeScript
@@ -73,3 +77,5 @@ The frontend will be available under port `3000`.
 * Implement page model object for tests
 
 * Abstract common functions, e.g. input or clicking in tests
+
+* Use Redux for state
