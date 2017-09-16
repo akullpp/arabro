@@ -8,4 +8,4 @@ Requires [Node](https://nodejs.org/) (latest).
 npm start
 ```
 
-The frontend will be available under port `3000`.
+The frontend will be available at port `3000`.
