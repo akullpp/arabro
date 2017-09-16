@@ -18,6 +18,9 @@ import java.util.stream.Stream;
 @Service
 public class NumeralService {
 
+    /**
+     * Arrays of Roman numerals in the subtractive notation.
+     */
     private static final String[] M = {"", "M", "MM", "MMM"};
     private static final String[] C = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
     private static final String[] X = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
