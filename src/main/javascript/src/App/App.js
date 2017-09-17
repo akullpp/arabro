@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import NumberInput from './NumberInput'
-import NumeralTable from './NumeralTable'
+import Input from '../Input'
+import Form from '../Form'
+import Table from '../Table'
 import Error from '../Error'
 import http from '../http'
+import Numeral from './Numeral'
 
 class App extends Component {
   state = {
@@ -55,6 +57,7 @@ class App extends Component {
 
   render() {
     const { number, numerals, errors } = this.state;
+    const headers = ['Arabic', 'Roman']
 
     return (
       <div>
@@ -62,18 +65,28 @@ class App extends Component {
         <h3>...at least from the 1 to 3999</h3>
         <h4>...and colored primes!</h4>
         <div className="numeral__input-wrapper">
-          <NumberInput
-            handleSubmit={this.handleSubmit}
-            placeholder="What needs to be converted?"
-            value={number}
-            handleInput={this.handleInput}
-          />
+          <Form handleSubmit={this.handleSubmit}>
+            <Input
+              handleSubmit={this.handleSubmit}
+              placeholder="What needs to be converted?"
+              value={number}
+              handleInput={this.handleInput}
+            />
+          </Form>
         </div>
         {
           errors.length > 0 && <Error messages={errors} />
         }
         <div>
-          <NumeralTable numerals={numerals} />
+          <Table headers={headers}>
+            {
+              numerals.map(numeral =>
+                <Numeral
+                  key={numeral.arabic}
+                  numeral={numeral}
+                />)
+            }
+          </Table>
         </div>
       </div>
     );

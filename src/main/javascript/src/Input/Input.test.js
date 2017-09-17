@@ -1,27 +1,24 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import NumberInput from './NumberInput';
+import Input from './Input';
 
 const setup = () => {
-  const handleSubmit = jest.fn()
   const handleInput = jest.fn()
 
   const props = {
     placeholder: 'placeholder',
     value: 'value',
-    handleSubmit,
     handleInput,
   }
 
   return {
-    wrapper: shallow(<NumberInput {...props} />),
-    handleSubmit,
+    wrapper: shallow(<Input {...props} />),
     handleInput,
   }
 }
 
-describe('NumberInput Component', () => {
+describe('Input Component', () => {
   test('should render', () => {
     const { wrapper } = setup()
 
@@ -50,13 +47,5 @@ describe('NumberInput Component', () => {
     wrapper.find('input').simulate('change', { target: { value: 'text' } })
 
     expect(handleInput.mock.calls.length).toBe(1)
-  })
-
-  test('should trigger handleSubmit function on submit change', () => {
-    const { wrapper, handleSubmit } = setup()
-
-    wrapper.find('form').simulate('submit')
-
-    expect(handleSubmit.mock.calls.length).toBe(1)
   })
 })

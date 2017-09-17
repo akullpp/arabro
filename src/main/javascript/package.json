@@ -13,6 +13,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "lint": "eslint 'src/**/*.js' --fix; exit 0",
     "eject": "react-scripts eject"
   },
   "devDependencies": {

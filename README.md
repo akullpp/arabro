@@ -34,8 +34,6 @@ The Swagger API can be used under the `http://<host>:<port>/swagger-ui.html` URL
 
 The backend will be available at port `11000`.
 
-The last manual build of the frontend is served at the root.
-
 ### Frontend
 
 Requires [Node](https://nodejs.org/) (latest).
