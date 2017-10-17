@@ -1,6 +1,6 @@
-package de.akull.controller.conversion;
+package de.akull.arabro.controller.conversion;
 
-import de.akull.service.NumeralService;
+import de.akull.arabro.service.NumeralService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.Resource;

@@ -1,4 +1,4 @@
-package de.akull.controller.exception;
+package de.akull.arabro.controller.exception;
 
 import lombok.Builder;
 import lombok.Data;

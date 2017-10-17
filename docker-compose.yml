@@ -1,6 +1,6 @@
 version: '3.3'
 services:
-  demo-service:
+  arabro-service:
     build: .
     ports:
       - "8080:11000"

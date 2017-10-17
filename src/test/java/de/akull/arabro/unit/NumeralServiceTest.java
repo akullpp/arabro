@@ -1,6 +1,6 @@
-package de.akull.unit;
+package de.akull.arabro.unit;
 
-import de.akull.service.NumeralService;
+import de.akull.arabro.service.NumeralService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

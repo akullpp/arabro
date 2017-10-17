@@ -1,4 +1,4 @@
-package de.akull.controller.exception;
+package de.akull.arabro.controller.exception;
 
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;

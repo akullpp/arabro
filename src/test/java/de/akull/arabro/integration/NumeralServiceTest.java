@@ -1,6 +1,6 @@
-package de.akull.integration;
+package de.akull.arabro.integration;
 
-import de.akull.service.NumeralService;
+import de.akull.arabro.service.NumeralService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

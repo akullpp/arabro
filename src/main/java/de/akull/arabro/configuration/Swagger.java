@@ -1,4 +1,4 @@
-package de.akull.configuration;
+package de.akull.arabro.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

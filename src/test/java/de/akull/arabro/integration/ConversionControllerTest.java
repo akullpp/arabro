@@ -1,9 +1,9 @@
-package de.akull.integration;
+package de.akull.arabro.integration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import de.akull.controller.conversion.ConversionController;
-import de.akull.controller.conversion.ConversionRequest;
-import de.akull.service.NumeralService;
+import de.akull.arabro.controller.conversion.ConversionController;
+import de.akull.arabro.controller.conversion.ConversionRequest;
+import de.akull.arabro.service.NumeralService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
